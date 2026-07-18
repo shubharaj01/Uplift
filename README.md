@@ -11,7 +11,7 @@ Uplift is a fictional frontend project created to explore how modern design, sto
 
 ## 👩‍💻 Live Demo
 
-🔗 **Website:** https://YOUR-VERCEL-LINK.vercel.app
+🔗 **Website:** https://uplift-woad.vercel.app/
 
 ---
 
