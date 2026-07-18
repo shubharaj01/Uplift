@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t6"><title id="t6">Food security campaign illustration</title>
+<defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#bdc2ff"/><stop offset="100%" stop-color="#505794"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g6)"/>
+<circle cx="200" cy="200" r="95" fill="#fffbff"/>
+<path d="M140 200 C140 160 165 140 200 140 C235 140 260 160 260 200" fill="none" stroke="#425f8a" stroke-width="10" stroke-linecap="round"/>
+<circle cx="160" cy="220" r="14" fill="#7d6e95"/>
+<circle cx="200" cy="230" r="14" fill="#64557b"/>
+<circle cx="240" cy="220" r="14" fill="#7d6e95"/>
+</svg>

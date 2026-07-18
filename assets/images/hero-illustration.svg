@@ -1,0 +1,47 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Illustration of hands joining together beneath a rising sun, symbolizing community collaboration</title>
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6970ae"/>
+      <stop offset="100%" stop-color="#b0cdfe"/>
+    </linearGradient>
+    <linearGradient id="heroSun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecdcff"/>
+      <stop offset="100%" stop-color="#fffbff"/>
+    </linearGradient>
+    <linearGradient id="heroHand1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#505794"/>
+      <stop offset="100%" stop-color="#3b427d"/>
+    </linearGradient>
+    <linearGradient id="heroHand2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#425f8a"/>
+      <stop offset="100%" stop-color="#2a4870"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="48" fill="url(#heroSky)"/>
+  <circle cx="620" cy="150" r="110" fill="url(#heroSun)" opacity="0.85"/>
+  <circle cx="620" cy="150" r="150" fill="#fffbff" opacity="0.12"/>
+  <g opacity="0.35">
+    <circle cx="120" cy="90" r="10" fill="#ffffff"/>
+    <circle cx="200" cy="60" r="6" fill="#ffffff"/>
+    <circle cx="90" cy="180" r="7" fill="#ffffff"/>
+    <circle cx="700" cy="330" r="8" fill="#ffffff"/>
+    <circle cx="60" cy="380" r="6" fill="#ffffff"/>
+  </g>
+  <path d="M0 430 C 180 380, 620 380, 800 440 L800 600 L0 600 Z" fill="#ffffff" opacity="0.18"/>
+  <path d="M0 470 C 220 430, 600 430, 800 480 L800 600 L0 600 Z" fill="#ffffff" opacity="0.25"/>
+  <g transform="translate(230,330)">
+    <path d="M0 140 C 10 60, 60 20, 120 20 C 150 20, 165 40, 165 65 L165 150 C165 175 145 195 118 195 L40 195 C 15 195 0 165 0 140 Z" fill="url(#heroHand1)"/>
+    <path d="M40 20 L60 -70 C 62 -82 78 -82 82 -70 L96 20" fill="none" stroke="url(#heroHand1)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M78 20 L92 -55 C 94 -66 108 -66 111 -55 L120 20" fill="none" stroke="url(#heroHand1)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M112 24 L120 -35 C 122 -45 134 -45 137 -35 L142 24" fill="none" stroke="url(#heroHand1)" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(360,330) scale(-1,1)">
+    <path d="M0 140 C 10 60, 60 20, 120 20 C 150 20, 165 40, 165 65 L165 150 C165 175 145 195 118 195 L40 195 C 15 195 0 165 0 140 Z" fill="url(#heroHand2)"/>
+    <path d="M40 20 L60 -70 C 62 -82 78 -82 82 -70 L96 20" fill="none" stroke="url(#heroHand2)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M78 20 L92 -55 C 94 -66 108 -66 111 -55 L120 20" fill="none" stroke="url(#heroHand2)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M112 24 L120 -35 C 122 -45 134 -45 137 -35 L142 24" fill="none" stroke="url(#heroHand2)" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <circle cx="400" cy="290" r="34" fill="#fffbff"/>
+  <circle cx="400" cy="290" r="34" fill="none" stroke="#64557b" stroke-width="4" opacity="0.4"/>
+</svg>

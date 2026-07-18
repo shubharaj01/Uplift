@@ -1,0 +1,117 @@
+// ==========================================================================
+// _base.scss
+// Resets, root-level typography, and global element defaults.
+// ==========================================================================
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px; // clears the sticky navbar when jumping to anchors
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: $font-body;
+  font-size: $fs-body-md;
+  line-height: 1.6;
+  color: $color-on-surface;
+  background-color: $color-surface;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headline;
+  color: $color-on-surface;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-top: 0;
+}
+
+p {
+  color: $color-on-surface-variant;
+  margin-top: 0;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-secondary;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+// Skip-to-content link for keyboard users
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: $space-md;
+  background: $color-primary;
+  color: $color-white;
+  padding: 0.75rem 1.25rem;
+  border-radius: $radius-sm;
+  z-index: 1100;
+  transition: top $transition-fast;
+
+  &:focus {
+    top: $space-md;
+    color: $color-white;
+  }
+}
+
+// Consistent focus ring across custom interactive elements
+:focus-visible {
+  outline: 3px solid $color-secondary-fixed-dim;
+  outline-offset: 2px;
+}
+
+::selection {
+  background: $color-secondary-container;
+  color: $color-secondary-dark;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.container-xl-custom {
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: $container-padding-mobile;
+
+  @include bp(lg) {
+    padding-inline: $container-padding-desktop;
+  }
+}

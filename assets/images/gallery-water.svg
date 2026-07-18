@@ -1,0 +1,6 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t1"><title id="t1">Clean water access campaign illustration</title>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b0cdfe"/><stop offset="100%" stop-color="#425f8a"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g1)"/>
+<path d="M200 90 C240 160 280 200 280 250 C280 300 244 330 200 330 C156 330 120 300 120 250 C120 200 160 160 200 90 Z" fill="#fffbff" opacity="0.9"/>
+<path d="M200 150 C222 190 244 214 244 246 C244 274 224 292 200 292" fill="none" stroke="#425f8a" stroke-width="6" opacity="0.4"/>
+</svg>

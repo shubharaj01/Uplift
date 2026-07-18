@@ -1,0 +1,366 @@
+// ==========================================================================
+// _sections.scss
+// Layout and styling for each major page section.
+// ==========================================================================
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.section-eyebrow {
+  @include eyebrow;
+  display: block;
+  margin-bottom: $space-sm;
+}
+
+.section-heading {
+  font-size: $fs-headline-lg;
+  font-weight: 700;
+  margin-bottom: $space-md;
+}
+
+.section-divider {
+  width: 64px;
+  height: 4px;
+  background: rgba($color-primary, 0.3);
+  border-radius: $radius-full;
+  margin-inline: auto;
+}
+
+// ---- Hero -------------------------------------------------------------------
+.hero {
+  position: relative;
+  overflow: hidden;
+  @include section-padding;
+  padding-top: $space-3xl;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: 0;
+  }
+
+  &::before {
+    width: 360px; height: 360px;
+    top: -90px; right: -90px;
+    background: rgba($color-primary, 0.08);
+  }
+
+  &::after {
+    width: 260px; height: 260px;
+    bottom: 10%; left: -100px;
+    background: rgba($color-secondary, 0.08);
+  }
+
+  .hero-content { position: relative; z-index: 1; }
+
+  .hero-kicker {
+    @include eyebrow;
+    display: block;
+    margin-bottom: $space-md;
+  }
+
+  .hero-title {
+    font-size: $fs-display;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: $space-md;
+
+    em {
+      font-style: italic;
+      color: $color-primary;
+      font-weight: 800;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: $fs-body-lg;
+    max-width: 34rem;
+    margin-bottom: $space-lg;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-md;
+    align-items: center;
+  }
+
+  .hero-media {
+    position: relative;
+    z-index: 1;
+
+    .hero-media-frame {
+      border-radius: $radius-2xl;
+      overflow: hidden;
+      box-shadow: $shadow-ambient;
+      border: 1px solid rgba($color-white, 0.5);
+    }
+
+    .hero-quote-card {
+      @include glass(rgba(255, 255, 255, 0.75), 20px);
+      position: absolute;
+      left: -1.5rem;
+      bottom: -1.5rem;
+      max-width: 280px;
+      padding: $space-md;
+      border-radius: $radius-lg;
+      box-shadow: $shadow-ambient;
+      border: 1px solid rgba($color-white, 0.4);
+      display: none;
+
+      @include bp(xl) {
+        display: block;
+      }
+
+      p {
+        font-family: $font-headline;
+        font-style: italic;
+        font-weight: 600;
+        color: $color-on-surface;
+        margin-bottom: $space-sm;
+      }
+    }
+  }
+}
+
+// ---- Impact selector ----------------------------------------------------------
+.impact-selector {
+  @include section-padding;
+  background: rgba($color-surface-container-low, 0.6);
+}
+
+// ---- Our story ------------------------------------------------------------------
+.our-story {
+  @include section-padding;
+
+  .story-media {
+    border-radius: $radius-2xl;
+    overflow: hidden;
+    box-shadow: $shadow-ambient;
+    border: 8px solid $color-white;
+  }
+
+  .story-pullquote {
+    font-family: $font-headline;
+    font-style: italic;
+    font-weight: 600;
+    color: $color-primary;
+    padding-left: $space-md;
+    border-left: 3px solid rgba($color-primary, 0.3);
+    margin-block: $space-lg;
+  }
+}
+
+// ---- Impact journey ---------------------------------------------------------------
+.impact-journey {
+  @include section-padding;
+  background: $color-surface-container-lowest;
+}
+
+// ---- Impact metrics (counters) -----------------------------------------------------
+.impact-metrics {
+  @include section-padding;
+  background: $color-primary;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  .metric-value {
+    font-family: $font-headline;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  .metric-label {
+    @include eyebrow;
+    color: rgba($color-secondary-fixed-dim, 0.9);
+  }
+}
+
+// ---- Inline CSS demonstration spotlight banner ------------------------------------
+// NOTE: task requirement asks for one isolated section demonstrating inline CSS.
+// This wrapper only supplies the surrounding rhythm; the visual treatment for the
+// spotlight card itself is intentionally applied inline in index.html.
+.inline-demo-section {
+  @include section-padding;
+  padding-block: $space-xl;
+}
+
+// ---- Gallery / campaigns -----------------------------------------------------------
+.campaigns-gallery {
+  @include section-padding;
+  background: rgba($color-surface-container-low, 0.6);
+
+  .gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-sm;
+    justify-content: center;
+    margin-bottom: $space-xl;
+  }
+}
+
+// ---- Testimonial -----------------------------------------------------------------------
+.testimonial {
+  @include section-padding;
+
+  .testimonial-media {
+    position: relative;
+
+    .testimonial-frame {
+      border-radius: $radius-2xl;
+      overflow: hidden;
+      box-shadow: $shadow-ambient;
+      border: 4px solid $color-white;
+      aspect-ratio: 1 / 1;
+    }
+
+    .testimonial-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background: $color-primary;
+      color: $color-white;
+      padding: $space-md;
+      border-radius: $radius-lg;
+      box-shadow: $shadow-ambient;
+      display: none;
+
+      @include bp(md) {
+        display: block;
+      }
+
+      .badge-value {
+        font-family: $font-headline;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .quote-mark {
+    display: inline-flex;
+    padding: $space-sm;
+    border-radius: $radius-full;
+    background: rgba($color-primary, 0.08);
+    color: $color-primary;
+    margin-bottom: $space-md;
+
+    svg { width: 28px; height: 28px; }
+  }
+
+  blockquote {
+    font-family: $font-headline;
+    font-size: $fs-headline-lg;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: $space-lg;
+  }
+}
+
+// ---- Inspiration (fetch API) --------------------------------------------------------
+.inspiration {
+  @include section-padding;
+  background: $color-surface-container-lowest;
+}
+
+// ---- FAQ -------------------------------------------------------------------------------
+.faq {
+  @include section-padding;
+  background: rgba($color-surface-container-low, 0.6);
+}
+
+// ---- Volunteer form -----------------------------------------------------------------------
+.volunteer-form-section {
+  @include section-padding;
+
+  .form-panel {
+    @include card-elevated;
+    padding: $space-xl;
+  }
+}
+
+// ---- Closing CTA -----------------------------------------------------------------------------
+.closing-cta {
+  padding-block: $space-3xl;
+  background: $color-primary;
+  color: $color-white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  h2 { color: $color-white; }
+
+  p {
+    color: rgba($color-secondary-fixed, 0.9);
+    font-style: italic;
+  }
+}
+
+// ---- Footer -----------------------------------------------------------------------------------
+.uplift-footer {
+  background: $color-surface-container;
+  border-top: 1px solid rgba($color-outline-variant, 0.3);
+  padding-block: $space-2xl;
+
+  .footer-brand {
+    font-family: $font-headline;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: $color-primary;
+  }
+
+  h5 {
+    font-size: $fs-label-md;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: $space-md;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li { margin-bottom: $space-xs; }
+
+    a { color: $color-on-surface-variant; font-weight: 500; }
+  }
+
+  .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: $radius-full;
+    background: rgba($color-primary, 0.08);
+    color: $color-primary;
+    margin-right: $space-sm;
+    transition: background-color $transition-fast, color $transition-fast;
+
+    &:hover,
+    &:focus-visible {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba($color-outline-variant, 0.3);
+    margin-top: $space-xl;
+    padding-top: $space-md;
+    font-size: $fs-label-md;
+    color: $color-on-surface-variant;
+  }
+}

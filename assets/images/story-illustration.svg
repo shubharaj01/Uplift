@@ -1,0 +1,31 @@
+<svg viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="storyTitle">
+  <title id="storyTitle">Illustration of a small circle of people gathered together outdoors under a soft sky</title>
+  <defs>
+    <linearGradient id="storyBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dfe0ff"/>
+      <stop offset="100%" stop-color="#f1f4f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="700" rx="40" fill="url(#storyBg)"/>
+  <ellipse cx="350" cy="560" rx="260" ry="34" fill="#6970ae" opacity="0.18"/>
+  <g>
+    <circle cx="200" cy="330" r="42" fill="#505794"/>
+    <path d="M140 560 C140 460 165 400 200 400 C235 400 260 460 260 560 Z" fill="#505794"/>
+  </g>
+  <g>
+    <circle cx="350" cy="300" r="48" fill="#64557b"/>
+    <path d="M280 560 C280 445 310 380 350 380 C390 380 420 445 420 560 Z" fill="#64557b"/>
+  </g>
+  <g>
+    <circle cx="500" cy="330" r="42" fill="#425f8a"/>
+    <path d="M440 560 C440 460 465 400 500 400 C535 400 560 460 560 560 Z" fill="#425f8a"/>
+  </g>
+  <circle cx="350" cy="180" r="60" fill="#fffbff" opacity="0.7"/>
+  <circle cx="350" cy="180" r="60" fill="none" stroke="#bdc2ff" stroke-width="6"/>
+  <g opacity="0.5" stroke="#6970ae" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M110 210 q20 -30 40 0"/>
+    <path d="M560 230 q20 -30 40 0"/>
+    <path d="M580 470 q20 -30 40 0"/>
+    <path d="M80 470 q20 -30 40 0"/>
+  </g>
+</svg>

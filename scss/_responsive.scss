@@ -1,0 +1,82 @@
+// ==========================================================================
+// _responsive.scss
+// Breakpoint-specific layout adjustments that don't belong in a single
+// component/section file. Mobile-first: base styles target mobile,
+// this file layers on tablet/desktop refinements.
+// ==========================================================================
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ---- Mobile (default / < 768px) --------------------------------------------
+// Tighter type scale and stacked layouts are handled by the base rules above;
+// here we only trim spacing that would otherwise feel too generous on small
+// screens.
+.hero {
+  min-height: auto;
+  padding-top: $space-2xl;
+  text-align: center;
+
+  .hero-actions { justify-content: center; }
+  .hero-subtitle { margin-inline: auto; }
+}
+
+.testimonial-media { margin-bottom: $space-lg; }
+
+// ---- Tablet (>= 768px) ------------------------------------------------------
+@include bp(md) {
+  .hero {
+    text-align: left;
+
+    .hero-actions { justify-content: flex-start; }
+    .hero-subtitle { margin-inline: 0; }
+  }
+
+  .gallery-grid {
+    row-gap: $space-lg;
+  }
+}
+
+// ---- Desktop (>= 992px) -----------------------------------------------------
+@include bp(lg) {
+  .hero {
+    min-height: 88vh;
+    padding-top: $space-3xl;
+  }
+
+  .section-heading { font-size: $fs-headline-lg; }
+
+  .impact-journey .journey-track {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: 8%;
+      right: 8%;
+      height: 2px;
+      background: repeating-linear-gradient(
+        to right,
+        rgba($color-primary, 0.25) 0 10px,
+        transparent 10px 20px
+      );
+      z-index: 0;
+    }
+  }
+}
+
+// ---- Large desktop (>= 1200px) -----------------------------------------------
+@include bp(xl) {
+  .hero-media .hero-quote-card { display: block; }
+  .testimonial-media .testimonial-badge { display: block; }
+}
+
+// ---- Print -------------------------------------------------------------------
+@media print {
+  .uplift-navbar,
+  .quote-refresh-btn,
+  .gallery-filters,
+  .closing-cta,
+  form { display: none !important; }
+}

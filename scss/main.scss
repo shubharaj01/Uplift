@@ -1,0 +1,16 @@
+// ==========================================================================
+// main.scss
+// Entry point — forwards/uses all partials in cascade order and compiles
+// to ../css/style.css
+//
+// Build (Dart Sass):
+//   sass scss/main.scss css/style.css --style=compressed
+//   sass --watch scss/main.scss:css/style.css   (during development)
+// ==========================================================================
+
+@use 'variables';
+@use 'mixins';
+@use 'base';
+@use 'components';
+@use 'sections';
+@use 'responsive';

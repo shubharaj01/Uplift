@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uplift — Together We Build Tomorrow</title>
+  <meta name="description" content="Uplift is a community impact platform connecting volunteers, donors, and changemakers to build lasting local change." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Compiled Sass -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================= NAVBAR ============================= -->
+  <header>
+    <nav class="uplift-navbar navbar navbar-expand-lg fixed-top" aria-label="Primary">
+      <div class="container-xl-custom d-flex align-items-center justify-content-between w-100">
+        <a class="navbar-brand" href="#hero">Uplift</a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="navMain">
+          <ul class="navbar-nav gap-lg-4 mb-3 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#impact-selector">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="#campaigns">Campaigns</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonial">Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          </ul>
+          <a href="#volunteer-form" class="btn-uplift-primary ms-lg-4 mt-3 mt-lg-0">Join Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================= HERO ============================= -->
+    <section id="hero" class="hero">
+      <div class="container-xl-custom">
+        <div class="row align-items-center gy-5">
+          <div class="col-12 col-lg-6 hero-content">
+            <span class="hero-kicker">Est. 2024 — The Movement</span>
+            <h1 class="hero-title">Together We Build<br><em>Tomorrow.</em></h1>
+            <p class="hero-subtitle">
+              Uplift connects volunteers, donors, and communities around the projects that need them most —
+              because meaningful change starts with intentional, local action.
+            </p>
+            <div class="hero-actions">
+              <a href="#volunteer-form" class="btn-uplift-primary">Join the Movement</a>
+              <a href="#campaigns" class="btn-link-arrow">
+                Explore Campaigns
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="hero-media">
+              <div class="hero-media-frame">
+                <img src="assets/images/hero-illustration.svg" alt="Illustration of hands joining together beneath a rising sun, symbolizing community collaboration" width="800" height="600" loading="eager" />
+              </div>
+              <div class="hero-quote-card">
+                <p>&ldquo;We are the architects of the future we choose to build.&rdquo;</p>
+                <div style="width:48px;height:4px;background:#505794;border-radius:9999px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== IMPACT SELECTOR ========================= -->
+    <section id="impact-selector" class="impact-selector" aria-labelledby="impact-selector-heading">
+      <div class="container-xl-custom">
+        <div class="text-center mb-5">
+          <span class="section-eyebrow">Engagement</span>
+          <h2 id="impact-selector-heading" class="section-heading">Choose Your Catalyst</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4" id="catalystGroup" role="group" aria-label="Ways to get involved">
+          <div class="col-12 col-md-4">
+            <button type="button" class="catalyst-card w-100 text-start border-0" data-catalyst="volunteer" aria-pressed="true">
+              <div class="catalyst-icon"><i data-lucide="hand-heart" aria-hidden="true"></i></div>
+              <h3 class="h4">Volunteer</h3>
+              <p>Lend your time and skills to hands-on projects that need local expertise and passion.</p>
+              <span class="btn-link-arrow" style="border:none;padding:0;">Open Opportunities <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <button type="button" class="catalyst-card w-100 text-start border-0" data-catalyst="donate" aria-pressed="false">
+              <div class="catalyst-icon"><i data-lucide="heart" aria-hidden="true"></i></div>
+              <h3 class="h4">Donate</h3>
+              <p>Fuel essential campaigns with transparent financial support that goes directly to the source.</p>
+              <span class="btn-link-arrow" style="border:none;padding:0;">View Campaigns <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <button type="button" class="catalyst-card w-100 text-start border-0" data-catalyst="advocate" aria-pressed="false">
+              <div class="catalyst-icon"><i data-lucide="megaphone" aria-hidden="true"></i></div>
+              <h3 class="h4">Advocate</h3>
+              <p>Amplify community voices through shared stories and digital storytelling toolkits.</p>
+              <span class="btn-link-arrow" style="border:none;padding:0;">Share Stories <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+        </div>
+
+        <div id="impact-detail-panel" class="mt-5 p-4 p-lg-5 rounded-4 bg-white shadow-sm" aria-live="polite">
+          <!-- Populated by main.js based on the selected catalyst card -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ OUR STORY ============================ -->
+    <section id="our-story" class="our-story">
+      <div class="container-xl-custom">
+        <div class="row align-items-center gy-5">
+          <div class="col-12 col-lg-7">
+            <div class="story-media">
+              <img src="assets/images/story-illustration.svg" alt="Illustration of a small circle of people gathered together outdoors under a soft sky" width="700" height="700" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 offset-lg-1">
+            <span class="section-eyebrow">The Narrative</span>
+            <h2 class="section-heading">A legacy defined by intent.</h2>
+            <p>
+              What began as a handful of neighbors trading ideas over coffee has grown into a global network of
+              intentional changemakers. We don't just act — we listen, we measure, and we grow together.
+            </p>
+            <p class="story-pullquote">
+              &ldquo;Real progress isn't a sprint. It's a shared, rhythmic breath of a community moving toward one sun.&rdquo;
+            </p>
+            <a href="#" class="btn-link-arrow">Read Our Full Story <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= IMPACT JOURNEY ========================== -->
+    <section id="journey" class="impact-journey" aria-labelledby="journey-heading">
+      <div class="container-xl-custom">
+        <h2 id="journey-heading" class="section-heading text-center mb-5">The Impact Journey</h2>
+
+        <div class="row g-4 journey-track">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="journey-card">
+              <div class="journey-icon"><i data-lucide="search" aria-hidden="true"></i></div>
+              <h3 class="h5">Listen</h3>
+              <p>We work directly with community leaders to identify the challenges that matter most.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="journey-card">
+              <div class="journey-icon"><i data-lucide="users" aria-hidden="true"></i></div>
+              <h3 class="h5">Mobilize</h3>
+              <p>Connecting volunteers and donors with the specialized skillsets a project needs most.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="journey-card">
+              <div class="journey-icon"><i data-lucide="hammer" aria-hidden="true"></i></div>
+              <h3 class="h5">Execute</h3>
+              <p>Transparent deployment of resources with real-time updates and full accountability.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="journey-card">
+              <div class="journey-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <h3 class="h5">Sustain</h3>
+              <p>We measure long-term success through generational growth and community self-reliance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= IMPACT METRICS ========================== -->
+    <section id="metrics" class="impact-metrics" aria-labelledby="metrics-heading">
+      <h2 id="metrics-heading" class="visually-hidden">Our impact in numbers</h2>
+      <div class="container-xl-custom">
+        <div class="row g-5">
+          <div class="col-12 col-md-4">
+            <div class="metric-value" data-counter data-target="10311">0</div>
+            <p class="metric-label">Lives Impacted</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="metric-value" data-counter data-target="4280">0</div>
+            <p class="metric-label">Volunteers Mobilized</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="metric-value" data-counter data-target="371">0</div>
+            <p class="metric-label">Global Projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TASK 2: DEDICATED INLINE-CSS DEMONSTRATION ============ -->
+    <!--
+      The section below intentionally uses the style="" attribute rather than
+      classes, per the project requirement to isolate one inline-CSS example.
+      Every other section in this project uses compiled Sass/Bootstrap classes.
+    -->
+    <section id="spotlight" class="inline-demo-section" aria-labelledby="spotlight-heading">
+      <div class="container-xl-custom">
+        <div style="background: linear-gradient(135deg, #505794 0%, #6970ae 100%); border-radius: 32px; padding: 48px 32px; text-align: center; color: #ffffff; box-shadow: 0 20px 45px -15px rgba(80,87,148,0.35);">
+          <h2 id="spotlight-heading" style="font-family: 'Manrope', sans-serif; font-size: clamp(1.5rem, 2vw + 1rem, 2rem); font-weight: 800; margin-bottom: 16px;">
+            This Month's Spotlight: Clean Water Access
+          </h2>
+          <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; max-width: 640px; margin: 0 auto 24px auto; opacity: 0.92; color: #ffffff;">
+            We're funding well-repair projects across three rural districts. Every volunteer hour and every
+            dollar donated this month goes directly toward parts, labor, and long-term maintenance training.
+          </p>
+          <a href="#volunteer-form" style="display: inline-block; background: #ffffff; color: #505794; font-weight: 700; padding: 14px 32px; border-radius: 9999px; text-decoration: none;">
+            Get Involved
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FETCH API: DAILY INSPIRATION ================= -->
+    <section id="inspiration" class="inspiration" aria-labelledby="inspiration-heading">
+      <div class="container-xl-custom">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="text-center mb-5">
+              <span class="section-eyebrow">Daily Inspiration</span>
+              <h2 id="inspiration-heading" class="section-heading">A Little Fuel For Your Day</h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <figure class="quote-widget mb-0" aria-live="polite">
+              <blockquote id="quoteText" class="quote-loading">Loading today's quote…</blockquote>
+              <figcaption id="quoteAuthor">—</figcaption>
+              <div class="mt-4">
+                <button type="button" id="quoteRefreshBtn" class="quote-refresh-btn">
+                  <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                  New Quote
+                </button>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= GALLERY ============================= -->
+    <section id="campaigns" class="campaigns-gallery" aria-labelledby="campaigns-heading">
+      <div class="container-xl-custom">
+        <div class="text-center mb-4">
+          <span class="section-eyebrow">Our Work</span>
+          <h2 id="campaigns-heading" class="section-heading">Active Campaigns</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Filter campaigns by category">
+          <button type="button" class="uplift-chip active" data-filter="all">All</button>
+          <button type="button" class="uplift-chip" data-filter="water">Water</button>
+          <button type="button" class="uplift-chip" data-filter="education">Education</button>
+          <button type="button" class="uplift-chip" data-filter="health">Health</button>
+          <button type="button" class="uplift-chip" data-filter="shelter">Shelter</button>
+          <button type="button" class="uplift-chip" data-filter="food">Food</button>
+          <button type="button" class="uplift-chip" data-filter="environment">Environment</button>
+        </div>
+
+        <div class="row g-4 gallery-grid" id="galleryGrid">
+          <div class="col-12 col-sm-6 col-lg-4 gallery-col" data-category="water">
+            <div class="gallery-item">
+              <img src="assets/images/gallery-water.svg" alt="Illustration representing a clean water access campaign" loading="lazy" />
+              <div class="gallery-caption">
+                <h3>Clean Water Access</h3>
+                <p>Rural well repair &amp; maintenance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-col" data-category="education">
+            <div class="gallery-item">
+              <img src="assets/images/gallery-education.svg" alt="Illustration representing an education access campaign" loading="lazy" />
+              <div class="gallery-caption">
+                <h3>Education for All</h3>
+                <p>School supplies &amp; tutoring</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-col" data-category="environment">
+            <div class="gallery-item">
+              <img src="assets/images/gallery-reforestation.svg" alt="Illustration representing a reforestation campaign" loading="lazy" />
+              <div class="gallery-caption">
+                <h3>Reforestation Drive</h3>
+                <p>Native tree planting</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-col" data-category="health">
+            <div class="gallery-item">
+              <img src="assets/images/gallery-health.svg" alt="Illustration representing a healthcare access campaign" loading="lazy" />
+              <div class="gallery-caption">
+                <h3>Healthcare Access</h3>
+                <p>Mobile clinic outreach</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-col" data-category="shelter">
+            <div class="gallery-item">
+              <img src="assets/images/gallery-shelter.svg" alt="Illustration representing a community shelter campaign" loading="lazy" />
+              <div class="gallery-caption">
+                <h3>Community Shelter</h3>
+                <p>Emergency housing repair</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 gallery-col" data-category="food">
+            <div class="gallery-item">
+              <img src="assets/images/gallery-food.svg" alt="Illustration representing a food security campaign" loading="lazy" />
+              <div class="gallery-caption">
+                <h3>Food Security</h3>
+                <p>Community pantry network</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p id="galleryEmptyMessage" class="text-center mt-5 d-none">No campaigns match this filter yet — check back soon.</p>
+      </div>
+    </section>
+
+    <!-- =========================== TESTIMONIAL ============================ -->
+    <section id="testimonial" class="testimonial" aria-labelledby="testimonial-heading">
+      <h2 id="testimonial-heading" class="visually-hidden">Volunteer Story</h2>
+      <div class="container-xl-custom">
+        <div class="row align-items-center gy-5">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <div class="quote-mark"><i data-lucide="quote" aria-hidden="true"></i></div>
+            <blockquote>
+              &ldquo;Change doesn't always come from massive policy shifts — sometimes it's just about showing
+              up with a shovel and a smile.&rdquo;
+            </blockquote>
+            <div class="d-flex align-items-center gap-3">
+              <div style="width:48px;height:4px;background:#505794;border-radius:9999px;"></div>
+              <div>
+                <p class="h5 mb-0 fw-bold" style="color:#181c1e;">Amara Osei</p>
+                <p class="section-eyebrow mb-0">Lead Volunteer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="testimonial-media">
+              <div class="testimonial-frame">
+                <img src="assets/images/testimonial-avatar.svg" alt="Illustrated portrait of Amara Osei, a lead volunteer" loading="lazy" />
+              </div>
+              <div class="testimonial-badge">
+                <p class="section-eyebrow mb-2" style="color:rgba(255,255,255,0.8);">Community Impact</p>
+                <p class="badge-value mb-0">1,200+ hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== FAQ =============================== -->
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+      <div class="container-xl-custom">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="text-center mb-5">
+              <span class="section-eyebrow">Questions</span>
+              <h2 id="faq-heading" class="section-heading">Frequently Asked Questions</h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <div class="accordion uplift-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    How do I sign up to volunteer?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Fill out the volunteer registration form near the bottom of this page. We'll follow up
+                    within three business days with opportunities that match your interests and availability.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    Where does my donation actually go?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Every campaign lists its funding breakdown. Donations are routed directly to the local
+                    project team running that specific initiative, and we publish quarterly impact reports.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    Can I volunteer remotely?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes. Many advocacy, design, and storytelling roles are fully remote. Select "Advocate"
+                    above or mention remote availability in your registration form message.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    Is Uplift a registered nonprofit?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Uplift is a fictional demonstration platform built for portfolio purposes. In a production
+                    deployment this section would link to registration and tax-exemption documentation.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    How is my personal information used?
+                  </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    This demo form does not transmit data to a server — submissions are validated and
+                    displayed locally in your browser only. No information leaves your device.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VOLUNTEER REGISTRATION FORM =================== -->
+    <section id="volunteer-form" class="volunteer-form-section" aria-labelledby="volunteer-heading">
+      <div class="container-xl-custom">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="text-center mb-5">
+              <span class="section-eyebrow">Join Us</span>
+              <h2 id="volunteer-heading" class="section-heading">Register as a Volunteer</h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <div class="form-panel uplift-form">
+              <div id="formSuccessBanner" class="form-success-banner" role="status">
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                <span>Thank you! Your volunteer registration has been received. We'll be in touch soon.</span>
+              </div>
+
+              <form id="volunteerForm" novalidate>
+                <div class="row g-4">
+                  <div class="col-12 col-md-6">
+                    <label for="volName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="volName" name="name" required minlength="2" autocomplete="name" />
+                    <div class="invalid-feedback">Please enter your full name (at least 2 characters).</div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="volEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="volEmail" name="email" required autocomplete="email" />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="volPhone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="volPhone" name="phone" required autocomplete="tel" placeholder="e.g. +1 555 123 4567" />
+                    <div class="invalid-feedback">Please enter a valid phone number (digits, spaces, +, - only).</div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <label for="volInterest" class="form-label">Area of Interest</label>
+                    <select class="form-select" id="volInterest" name="interest" required>
+                      <option value="" selected disabled>Choose an area…</option>
+                      <option value="volunteer">Hands-on Volunteering</option>
+                      <option value="donate">Donating / Fundraising</option>
+                      <option value="advocate">Advocacy &amp; Storytelling</option>
+                      <option value="skills">Skills-based Support</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose an area of interest.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="volMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="volMessage" name="message" required minlength="10" placeholder="Tell us a little about your availability, skills, or which campaign interests you…"></textarea>
+                    <div class="invalid-feedback">Please share at least a short message (10+ characters).</div>
+                  </div>
+
+                  <div class="col-12 d-flex flex-wrap gap-3 align-items-center mt-2">
+                    <button type="submit" class="btn-uplift-primary">Submit Registration</button>
+                    <button type="reset" class="btn-uplift-ghost">Clear Form</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CLOSING CTA ============================= -->
+    <section class="closing-cta">
+      <div class="container-xl-custom" style="max-width:720px;">
+        <h2>Every movement begins with one person.</h2>
+        <p class="fs-5">Today, that person could be you. Join the thousands already making a difference.</p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+          <a href="#volunteer-form" class="btn-uplift-light">Start Your Journey</a>
+          <a href="#our-story" class="btn-uplift-ghost" style="border-color: rgba(255,255,255,0.4); color:#ffffff;">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="uplift-footer">
+    <div class="container-xl-custom">
+      <div class="row g-5">
+        <div class="col-12 col-md-4">
+          <a href="#hero" class="footer-brand d-inline-block mb-3">Uplift</a>
+          <p style="max-width: 26rem;">Building a future through intentional acts of kindness and community collaboration.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Uplift on Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Uplift on Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Uplift on Twitter"><i data-lucide="twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Uplift on LinkedIn"><i data-lucide="linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 offset-lg-1">
+          <h5>Discover</h5>
+          <ul>
+            <li><a href="#impact-selector">Get Involved</a></li>
+            <li><a href="#campaigns">Campaigns</a></li>
+            <li><a href="#testimonial">Stories</a></li>
+            <li><a href="#volunteer-form">Join Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-2 col-lg-2">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@uplift-community.org">hello@uplift-community.org</a></li>
+            <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-sm-row justify-content-between gap-2">
+        <p class="mb-0">&copy; 2026 Uplift. A fictional community impact platform, built for demonstration purposes.</p>
+        <p class="mb-0">Made with care, for changemakers everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================== SCRIPTS =============================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

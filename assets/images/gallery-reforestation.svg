@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t3"><title id="t3">Reforestation campaign illustration</title>
+<defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#abc8f8"/><stop offset="100%" stop-color="#2a4870"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g3)"/>
+<rect x="188" y="230" width="24" height="100" fill="#5a3d2b"/>
+<circle cx="200" cy="190" r="90" fill="#3f6f4a"/>
+<circle cx="140" cy="220" r="60" fill="#4c8158"/>
+<circle cx="260" cy="220" r="60" fill="#4c8158"/>
+</svg>
